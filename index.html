@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="只做你关心的事情" />
+    <meta name="keywords" content="Xsniper" />
+    <title>Xsniper</title>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        // 微软统计
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "lvqsivi0hi");
+    </script>
+  </head>
+
+  <body>
+    <div id="app" class="app">
+      <!--加载动画-->
+      <div class="mesh-loader">
+        <div class="set-one">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="set-two">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+      global = globalThis;
+    </script>
+
+    <style>
+      html,
+      body,
+      #app {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .mesh-loader {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .mesh-loader .circle {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        margin: -12.5px;
+        background: #03a9f4;
+        border-radius: 50%;
+        animation: mesh 3s ease-in-out infinite;
+        animation: mesh 3s ease-in-out infinite -1.5s;
+      }
+
+      .mesh-loader > div .circle:last-child {
+        animation-delay: 0s;
+        animation-delay: 0s;
+      }
+
+      .mesh-loader > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      .mesh-loader > div:last-child {
+        transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+      @keyframes mesh {
+        0% {
+          transform: rotate(0);
+          transform: rotate(0);
+          transform-origin: 50% -100%;
+          transform-origin: 50% -100%;
+        }
+
+        50% {
+          transform: rotate(360deg);
+          transform: rotate(360deg);
+          transform-origin: 50% -100%;
+          transform-origin: 50% -100%;
+        }
+
+        50.00001% {
+          transform: rotate(0deg);
+          transform: rotate(0deg);
+          transform-origin: 50% 200%;
+          transform-origin: 50% 200%;
+        }
+
+        100% {
+          transform: rotate(360deg);
+          transform: rotate(360deg);
+          transform-origin: 50% 200%;
+          transform-origin: 50% 200%;
+        }
+      }
+
+      @keyframes mesh {
+        0% {
+          transform: rotate(0);
+          transform: rotate(0);
+          transform-origin: 50% -100%;
+          transform-origin: 50% -100%;
+        }
+
+        50% {
+          transform: rotate(360deg);
+          transform: rotate(360deg);
+          transform-origin: 50% -100%;
+          transform-origin: 50% -100%;
+        }
+
+        50.00001% {
+          transform: rotate(0deg);
+          transform: rotate(0deg);
+          transform-origin: 50% 200%;
+          transform-origin: 50% 200%;
+        }
+
+        100% {
+          transform: rotate(360deg);
+          transform: rotate(360deg);
+          transform-origin: 50% 200%;
+          transform-origin: 50% 200%;
+        }
+      }
+    </style>
+  </body>
+</html>
